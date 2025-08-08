@@ -88,9 +88,8 @@ Power BI Desktop (Power Query, DAX), Azure Maps (visual), Excel (ad-hoc checks).
 ## **Key Insights Delivered**
 
 - **Revenue Optimization:** Identified **higher sales on Mondays and Tuesdays**, prompting rescheduling of promotions and staffing for higher conversion opportunities.  
-- **Product Strategy:** **Softdrinks**, **Tea**, **Alchohol** drives **89% of total revenue** — prioritize inventory and promotions here.  
-- **Customer Insights:** Top **10% of customers contributed 45%** of revenue → clear target group for VIP programs and retention campaigns.  
-- **Geographic Opportunities:** Northeast region generated **30% higher revenue per customer** vs. national average — recommend targeted expansion.
+- **Product Strategy:** **Softdrinks**, **Tea**, **Alchohol** drives **89% of total revenue** — prioritize inventory and promotions here.   
+
 
 ---
 
