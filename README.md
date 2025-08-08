@@ -10,83 +10,91 @@ Developed an interactive Power BI dashboard to analyze sales performance, identi
 
 ## **Key Features & Analyses**
 
-### **Revenue Trend Analysis**
-- Tracked revenue fluctuations over time (daily/monthly/quarterly).
-- Identified growth patterns, seasonal peaks, and anomalies.
+> **Charts used** (for quick reference):  
+> - **Revenue Trend Analysis:** *Line chart*  
+> - **Product Performance:** *Treemap*  
+> - **Customer Segmentation:** *Stacked bar chart*  
+> - **Total Revenue by Quarter & Category:** *Stacked column chart*  
+> - **Weekday Sales Pattern:** *Scatter chart* (and alternate view with *stacked column chart*)  
+> - **Revenue by Customer Location:** *Azure map*
 
-### **Product Performance**
-- Ranked products by **revenue**, **units sold**, and **profitability**.
-- Highlighted top-performing and underperforming products using metrics like **profit margin**.
+### **Revenue Trend Analysis** *(Line chart)*
+- Tracked revenue fluctuations over time (daily / monthly / quarterly) using an interactive **line chart** with trendlines and anomaly markers.
+- Metrics shown: **Revenue**, **Units Sold**, moving averages, YOY / MOM growth rates.
+- Visual interactions: hover tooltips, time-range slicer, and drill-through to specific dates/orders.
 
-### **Customer Segmentation**
-- Segmented customers by purchase frequency, total spend, and location.
-- Identified **high-value customers** for targeted marketing.
+### **Product Performance** *(Treemap)*
+- Ranked products by area and color using a **treemap** to surface top-selling SKUs at a glance.
+- Metrics shown: **Revenue**, **Units Sold**.
+- Drilldown: category → sub-category → product, with ability to filter other visuals by selection.
 
-### **Total Revenue by Quarter & Category**
-- Visualized revenue distribution across product categories per quarter.
-- Compared category performance to optimize inventory and promotions.
+### **Customer Segmentation** *(Stacked bar chart)*
+- Segmented customers by purchase frequency and total spend using a **stacked bar chart** to compare segments across locations or acquisition cohorts.
+- Metrics shown: **Customer Count**, **Total Spend**, **Average Order Value (AOV)**, **Customer Lifetime Value (CLV)**.
+- Built-in slicers: segment, acquisition date range, and region.
 
-### **Weekday Sales Pattern**
-- Analyzed sales volume and revenue by day of the week.
-- Revealed peak sales days to align staffing and marketing efforts.
+### **Total Revenue by Quarter & Category** *(Stacked column chart)*
+- Visualized contribution of each product category across quarters with a **stacked column chart** for quick comparison of seasonal/category mix.
+- Metrics shown: **Quarterly Revenue**, category shares (%), growth vs. prior quarter.
 
-### **Revenue by Customer Location**
-- Mapped revenue contributions geographically.
-- Pinpointed high-potential regions for business expansion.
+### **Weekday Sales Pattern** *(Scatter chart & Stacked column chart)*
+- Primary view: **scatter chart** showing transactions (or aggregated points) across weekdays with size = Revenue per unit and y-axis = gross profit margin to find outliers and distribution.
+- Alternate view: **stacked column chart** that aggregates revenue and units sold by weekday to highlight peak days.
+- Metrics shown: **Revenue by Weekday**, **Units Sold**, weekend vs weekday lift.
+
+### **Revenue by Customer Location** *(Azure map)*
+- Geo-visualization using **Azure map** to show revenue density and average revenue per customer by region.
+- Metrics shown: **Total Revenue**, **Revenue per Customer**, **Customer Count**, hotspots for expansion.
+- Interactivity: zoom, cluster, and filter by product category or segment.
 
 ---
 
 ## **Data Sources**
 
 - **Sales Data** (`sales_data.csv`):  
-  1,000+ transactions with fields: `Purchase Date`, `ProductID`, `CustomerCode`, `Order ID`, `Units Sold`, `Revenue`, `Cost of Goods Sold`.
+with fields: `Purchase Date`, `ProductID`, `CustomerCode`, `Order ID`, `Units Sold`, `Revenue`, `Cost of Goods Sold`.
 
 - **Product Metadata** (`product.csv`):  
-  Product details (e.g., category, name, price tier).
+ with fields: `ProductID`, `Product`, `Category`.
 
 - **Customer Metadata** (`customer.csv`):  
-  Customer attributes (e.g., location, segment, acquisition date).
+  with fields: `CustomerCode`, `Customer Name`, `Custome State`, `Customer City`, `Customer Zip Code`.
+
+> The included datasets are sample CSVs used to populate the dashboard. Update or replace with your actual files while maintaining column compatibility for seamless refresh.
 
 ---
 
 ## **Technical Execution**
 
 **Tools:**  
-Power BI (DAX, Power Query), Excel.
+Power BI Desktop (Power Query, DAX), Azure Maps (visual), Excel (ad-hoc checks).
 
 **Data Processing:**  
-Cleansed data (handled duplicates, missing values, date formatting). Created calculated metrics (e.g., **profit**, **profit margin**, **customer lifetime value**).
+- Cleaned and preprocessed data: handled duplicates and missing values, normalized date fields, and standardized product/customer keys.  
+- Created calculated metrics: **Profit** (`Revenue - COGS`), **Profit Margin**, **Customer Lifetime Value (CLV)**, **Average Order Value (AOV)**, weekday indicators, quarter/year flags.
 
 **Data Modeling:**  
-Established relationships between `sales_data`, `product`, and `customer` tables.
+- Relationships:
+  - `sales_data` ←→ `product` (many-to-one)
+  - `sales_data` ←→ `customer` (many-to-one)  
+- Ensured correct cardinality and filter directions for accurate aggregations across visuals.
 
-**Visualizations:**  
-Interactive charts (line, bar, maps), matrices, slicers, and KPI cards. Dynamic filters for time, product category, and customer segments.
+**Visualizations & UX:**  
+- Interactive elements: slicers (time, category, segment), KPI cards (Total Revenue, YoY Growth, Gross Profit), drill-through pages.  
+- Tooltips enriched with contextual metrics (e.g., profit margin, CLV sample) for faster insights.
 
 ---
 
 ## **Key Insights Delivered**
 
-- **Revenue Optimization:** Identified **20% higher sales on weekends**, prompting shift in promotional scheduling.  
-- **Product Strategy:** Revealed **Category B** as the top revenue driver (**35% of total sales**).  
-- **Customer Insights:** **Top 10% of customers contributed 45%** of revenue, highlighting VIP potential.  
-- **Geographic Opportunities:** **Northeast region generated 30% higher revenue per customer** vs. national average.
+- **Revenue Optimization:** Identified **higher sales on Mondays and Tuesdays**, prompting rescheduling of promotions and staffing for higher conversion opportunities.  
+- **Product Strategy:** **Softdrinks**, **Tea**, **Alchohol** drives **89% of total revenue** — prioritize inventory and promotions here.  
+- **Customer Insights:** Top **10% of customers contributed 45%** of revenue → clear target group for VIP programs and retention campaigns.  
+- **Geographic Opportunities:** Northeast region generated **30% higher revenue per customer** vs. national average — recommend targeted expansion.
 
 ---
-
-## **Why This Matters to Employers**
-
-- **Business Impact:** Demonstrates ability to translate raw data into strategic insights that drive revenue growth and operational efficiency.  
-- **Technical Proficiency:** Showcases expertise in Power BI, data modeling, DAX, and dashboard design.  
-- **Problem-Solving:** Proves capability to handle end-to-end analytics projects—from data cleaning to stakeholder-ready visualizations.  
-- **Domain Knowledge:** Highlights understanding of sales analytics, customer behavior, and inventory optimization.
 
 ---
 
 ## **GitHub Repository Contents**
-
-- Power BI File: `Sales_Performance_Dashboard.pbix` (interactive report).  
-- Datasets: `sales_data.csv` (provided), `product.csv`, `customer.csv`.  
-- Documentation: `README.md` with setup instructions and analysis summary.  
-- Screenshots of key dashboard views.
 
