@@ -1,6 +1,6 @@
 # **Sales Performance Dashboard**
 
-![](IMG_20240226_143320.jpg)
+![Dashboard Screenshot]([path/to/dashboard_screenshot.png](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/61947b9b94a64a06e3df724e85df32a542f32618/Screenshot%202025-08-08%20100750.png))  
 **Project Overview:**  
 **Sales Performance Dashboard**
 
