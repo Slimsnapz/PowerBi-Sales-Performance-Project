@@ -1,6 +1,6 @@
 # **Sales Performance Dashboard**
 
-![](Screenshot 2025-08-08 100750.png)  
+![](IMG_20240226_143320.jpg)
 **Project Overview:**  
 **Sales Performance Dashboard**
 
