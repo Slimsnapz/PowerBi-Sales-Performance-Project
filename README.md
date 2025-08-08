@@ -1,6 +1,6 @@
 # **Sales Performance Dashboard**
 
-![Dashboard Screenshot]([[path/to/dashboard_screenshot.png](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/61947b9b94a64a06e3df724e85df32a542f32618/Screenshot%202025-08-08%20100750.png)](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/main/Screenshot%202025-08-08%20100750.png?raw=true)) 
+![Dashboard Screenshot]([[[path/to/dashboard_screenshot.png](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/61947b9b94a64a06e3df724e85df32a542f32618/Screenshot%202025-08-08%20100750.png)](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/main/Screenshot%202025-08-08%20100750.png?raw=true)](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/7842b602fd8c7f45ddca5eeea65f7531153131c9/Screenshot%202025-08-08%20100750.jpg)) 
 
 ![Dashboard Screenshot]([path/to/dashboard_screenshot.png](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/f2f7d35938c4898e1cd33fa741cc7892e9a7c54f/Screenshot%202025-08-08%20132626.png))   
 **Project Overview:**  
