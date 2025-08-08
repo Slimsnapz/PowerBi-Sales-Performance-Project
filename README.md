@@ -1,6 +1,6 @@
 # **Sales Performance Dashboard**
 
-![Dashboard Screenshot]([Screenshot 2025-08-08 100750.jpg](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/02d827eb10570f6a153b4883c3b3670ad691f121/Screenshot%202025-08-08%20100750.jpg))  
+![Dashboard Screenshot](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/ef991b396700097774bf8bf93a6915380f9e22ce/Screenshot%202025-08-08%20100750.jpg)  
 
 ![Dashboard Screenshot](https://github.com/Slimsnapz/PowerBi-Sales-Performance-Project/blob/79297369b4a27a2468f3565e9e14559549a6e11a/Screenshot%202025-08-08%20132626.jpg)  
   
